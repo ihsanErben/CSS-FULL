@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    transition: all 1s;
+}
+
+.box:hover {
+    transform: rotate(45deg);
+    border-top-right-radius: 100px;
+    /* transform: translate(100px); */
+    /* transform: translateX(-100px); */
+    /* transform: translateY(100px); */
+    transform: scale(1.4);
+}

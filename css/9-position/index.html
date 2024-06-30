@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body {
+            margin: 0px;
+            height: 200vh;
+        }
+
+        .box {
+            color: white;
+            width: 200px;
+            height: 200px;
+            font-size: 30px;
+        }
+
+        .box1 {
+            background-color: red;
+            z-index: 3;
+        }
+
+        .box2 {
+            background-color: green;
+            top: -100px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .box3 {
+            background-color: blue;
+            bottom: 0;
+            right: 0;
+            z-index: 50;
+            position: absolute;
+        }
+
+        .wrapper {
+            border: 5px black solid;
+            width: 500px;
+            position: relative;
+        }
+
+        .big-wrapper {
+            border: 5px red solid;
+            padding: 20px;
+            width: 900px;
+            margin-top: 70px;
+            position: relative;
+        }
+
+        header {
+            background-color: yellow;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">Logo</h2>
+            <div class="menu-links">
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="big-wrapper">
+        <div class="wrapper">
+            <div class="box box1">Kutu1</div>
+            <div class="box box2">Kutu2</div>
+            <div class="box box3">Kutu3</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

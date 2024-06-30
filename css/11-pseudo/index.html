@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+
+    <style>
+        body {
+            width: 800px;
+        }
+
+        .links a:link {
+            color: turquoise;
+        }
+
+        .links a:visited {
+            color: red;
+        }
+
+        .links a:hover {
+            color: black;
+            font-style: italic;
+        }
+
+        .links a:active {
+            color: coral;
+        }
+
+        .button p:hover {
+            color: red;
+        }
+
+        .button button {
+            display: none;
+        }
+
+        .button:hover button {
+            display: inline-block;
+        }
+
+        .naber p:first-child {
+            color: black;
+        }
+
+        .naber p:last-child {
+            color: blue;
+        }
+
+        .naber p:first-child::first-letter {
+            font-size: 50px;
+            background-color: green;
+        }
+
+        .naber p:first-line {
+            background-color: chocolate;
+        }
+
+        .naber p:last-child::after {
+            content: " ->->->****";
+        }
+
+        .naber p::selection {
+            background-color: black;
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="links">
+        <a href="ahome.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="sakin.html">Sakins</a>
+    </div><br>
+
+    <div class="button">
+        <p>Show Button</p>
+        <button>TIKLA</button>
+    </div>
+
+    <div class="naber">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non adipisci voluptatum quo, corrupti facilis rerum
+            inventore sapiente quae voluptate atque asperiores debitis animi, praesentium id excepturi consequatur et?
+            Perspiciatis animi in fugiat, accusamus error adipisci natus unde id esse aliquid?</p>
+
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reiciendis hic doloribus ad iusto eius ullam
+            possimus tenetur maiores ducimus at sapiente illo minima consequuntur cumque accusamus omnis sed, eligendi
+            in cupiditate eos fugit! Distinctio reiciendis enim beatae rerum alias, tempore ipsam quae voluptatibus
+            commodi, accusamus non atque, repellendus eveniet. Nihil aut suscipit voluptate, sit non dolor neque
+            pariatur omnis!</p>
+    </div>
+
+</body>
+
+</html>

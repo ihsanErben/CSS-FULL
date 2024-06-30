@@ -1,0 +1,77 @@
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    animation-name: box;
+    animation: box 5s forwards;
+}
+
+@keyframes box {
+    /* from {
+        top: 0px;
+        left: 0px;
+    }
+
+    to {
+        width: 600px;
+        top: 200px;
+        left: 200px;
+    } */
+
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        top: 200px;
+        left: 200px;
+    }
+
+    75% {
+        left: 400px;
+        top: 200px;
+    }
+
+    80% {
+        top: 400px;
+        left: 400px;
+    }
+
+    100% {
+        top: 400px;
+        left: 1000px;
+    }
+}
+
+button {
+    position: absolute;
+    animation: button 5s forwards;
+}
+
+@keyframes button {
+    from {
+        top: 0;
+        left: 0;
+    }
+
+    to {
+        top: 50px;
+        left: 50px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        .use+p {
+            color: red;
+        }
+
+        .direct-selector>p {
+            color: red;
+        }
+
+        p[class="a"] {
+            background-color: black;
+        }
+
+        p[href*="a"] {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="use">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam facilis vero cupiditate facere aliquam
+            inventore tempore repellendus dignissimos nisi eveniet.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, at. Recusandae blanditiis dolor fugiat in.
+            Natus dicta facilis nam odit.</p>
+    </div>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam facilis vero cupiditate facere aliquam
+        inventore tempore repellendus dignissimos nisi eveniet.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, at. Recusandae blanditiis dolor fugiat in.
+        Natus dicta facilis nam odit.</p>
+
+    <hr>
+    <hr>
+
+    <div class="direct-selector">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <p class="a">Lorem ipsum dolor sit amet.</p>
+        <p class="">Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+
+</html>

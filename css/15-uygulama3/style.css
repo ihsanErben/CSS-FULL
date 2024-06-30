@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    background-color: black;
+    height: 200vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    color: white;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 150;
+    background-color: black;
+}
+
+.header-nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px gray solid;
+    padding: 0px 20px;
+}
+
+.header-left {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+}
+
+.header-center {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.bi-bell {
+    position: relative;
+}
+
+.bi-bell::after {
+    content: "1";
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    height: 10px;
+    width: 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.header-right {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+}
+
+header i {
+    font-size: 20px;
+}
+
+.header-left h2 {
+    font-size: 25px;
+    position: relative;
+}
+
+.header-search input {
+    background-color: black;
+    border: .5px white solid;
+    border-radius: 15px;
+    font-size: 25px;
+    width: 400px;
+}
+
+#search {
+    position: relative;
+    left: 2px;
+}
+
+#mic {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 10px;
+    background-color: dimgray;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+#plus {
+    position: relative;
+    right: 40px;
+}
+
+#bell {
+    position: relative;
+    right: 20px;
+}
+
+#avatar {
+    font-size: 23px;
+}
+
+
+/* HEADER END */
+
+.content {
+    position: relative;
+    top: 71px;
+    display: flex;
+}
+
+/* SIDE BAR START */
+
+
+.side-bar {
+    height: 100%;
+    width: 120px;
+}
+
+.general {
+    width: 120px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-right: 1px gray solid;
+    background-color: black;
+    transform: translateX(-200px);
+    animation: fly .5s forwards ease-out;
+}
+
+@keyframes fly {
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.general a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-bar i {
+    font-size: 20px;
+}
+
+.general a {
+    margin-top: 30px;
+    text-decoration: none;
+    transition: 2s;
+}
+
+.general a :hover {
+    color: red;
+}
+
+.general a * {
+    transition: .5s;
+}
+
+/* SIDE BAR END */
+
+/* CONTENT START */
+
+.packages {
+    margin: 20px;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    flex: 1;
+    transform: translateY(-850px);
+    animation: come .5s forwards ease-out;
+}
+
+@keyframes come {
+    to {
+        transform: translateY(0px);
+    }
+}
+
+
+.image {
+    display: flex;
+    position: relative;
+
+}
+
+.image a {
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.image img {
+    width: 100%;
+}
+
+.image span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: gray;
+    margin-bottom: 7px;
+    margin-right: 1px;
+    opacity: 0.7;
+    box-shadow: 0px 0px 5px red;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.text span {
+    font-size: 13px;
+    opacity: .4;
+}
+
+.text a {
+    text-decoration: none;
+}
+
+.general a:nth-child(3):link {
+    background-color: orange;
+}
+
+.header-right {
+    position: relative;
+}
+
+.package {
+    transition: all .2s;
+}
+
+.package:hover {
+    transform: scale(1.05);
+}
