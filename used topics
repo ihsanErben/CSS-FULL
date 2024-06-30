@@ -1,0 +1,38 @@
+HTML:
+img
+a
+p
+h1
+br
+hr
+
+CSS:
+border
+border radius
+margin
+padding
+hover
+transition
+box shadow
+dev tools
+text decoration
+display grid
+display flex
+align items
+justify content
+position relative
+position absolute
+position fixed
+position sticky
+pseudo : , ::
+before
+after
+transform rotate
+transform translate
+keyframe
+animation
+media queries
+rem, em
+variables
+var
+:root
